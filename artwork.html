@@ -1,16 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/8b476543a7.js" crossorigin="anonymous"></script>
-    <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
-  
+    <link href="./resources/css/artwork.css" type="text/css" rel="stylesheet">
+    <link href="./resources/css/nav.css" type="text/css" rel="stylesheet">
+
     <title>Artwork</title>
 </head>
 
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
 
     <div class="topnav">
         <div class="socialMedia">
@@ -35,7 +43,121 @@
         </div>
     </div>
 
-    <p> YOOOOO</p>
+    <!-- <img class="background" src="./resources/pics/bluePaint.jpg" alt="background"> -->
+
+    <div class="container">
+        <section class="featured-artworks">
+            <h1>Featured Graphics</h1>
+            <h3>Graphical content I have crafted using Adobe Photoshop, harnessing my proficiency in design and creative
+                conceptualization</h3>
+            <div class="artwork-grid">
+                <div class="artwork">
+                    <img class="popup_image" src="./resources/pics/artwork/TorerostoPros.jpeg" alt="Artwork 1">
+                </div>
+                <div class="artwork">
+                    <img class="popup_image" src="./resources/pics/artwork/heartfinal.jpg" alt="Artwork 16">
+                </div>
+                <div class="artwork">
+                    <img class="popup_image" src="./resources/pics/artwork/energyupdate.jpg" alt="Artwork 17">
+                </div>
+                <div class="artwork">
+                    <img class="popup_image" src="./resources/pics/artwork/WBCA.jpg" alt="Artwork 2">
+                </div>
+                <div class="artwork">
+                    <img class="popup_image" src="./resources/pics/artwork/COMMIT.jpg" alt="Artwork 3">
+                </div>
+                <div class="artwork">
+                    <img class="popup_image" src="./resources/pics/artwork/VeronicaSheffey.jpeg" alt="Artwork 4">
+                </div>
+                <div class="artwork">
+                    <img class="popup_image" src="./resources/pics/artwork/SDVALUES.jpeg" alt="Artwork 6">
+                </div>
+                <div class="artwork">
+                    <img class="popup_image" src="./resources/pics/artwork/Roni.jpg" alt="Artwork 7">
+                </div>
+                <div class="artwork">
+                    <img class="popup_image" src="./resources/pics/artwork/Mila.jpg" alt="Artwork 9">
+                </div>
+                <div class="artwork">
+                    <img class="popup_image" src="./resources/pics/artwork/Malia.jpg" alt="Artwork 10">
+                </div>
+                <div class="artwork">
+                    <img class="popup_image" src="./resources/pics/artwork/maui.jpg" alt="Artwork 11">
+                </div>
+                <div class="artwork">
+                    <img class="popup_image" src="./resources/pics/artwork/Maddie.jpg" alt="Artwork 12">
+                </div>
+                <div class="artwork">
+                    <img class="popup_image" src="./resources/pics/artwork/Kylie.jpg" alt="Artwork 13">
+                </div>
+                <div class="artwork">
+                    <img class="popup_image" src="./resources/pics/artwork/Kiki.jpg" alt="Artwork 14">
+                </div>
+                <div class="artwork">
+                    <img class="popup_image" src="./resources/pics/artwork/Honey.jpg" alt="Artwork 15">
+                </div>
+                <div class="artwork">
+                    <img class="popup_image" src="./resources/pics/artwork/dylan.jpg" alt="Artwork 18">
+                </div>
+                <div class="artwork">
+                    <img class="popup_image" src="./resources/pics/artwork/2025Recruit.jpg" alt="Artwork 19">
+                </div>
+                <div class="artwork">
+                    <img class="popup_image" src="./resources/pics/artwork/teamwork.jpg" alt="Artwork 5">
+                </div>
+                <div class="artwork">
+                    <img class="popup_image" src="./resources/pics/artwork/nameplate.jpg" alt="Artwork 8">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <!-- <div id="caption"></div> -->
+    </div>
+
+    <script>
+
+        $(document).ready(function () {
+
+            $(".popup_image").on('click', function () {
+
+                // Get the modal
+                var modal = document.getElementById("myModal");
+
+                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                var img = $(this).attr('src');
+                var modalImg = document.getElementById("img01");
+                // var captionText = document.getElementById("caption");
+
+
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                // captionText.innerHTML = this.alt;
+
+
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function () {
+                    modal.style.display = "none";
+                }
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function (event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
+            });
+        });
+
+    </script>
+
 
 </body>
 
