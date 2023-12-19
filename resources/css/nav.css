@@ -4,6 +4,7 @@
     overflow: hidden;
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
     border: 0.5px solid #ccc;
+    position: relative;
 }
 
 /* Style the links inside the navigation bar */
@@ -44,4 +45,19 @@
 .fa:hover {
     opacity: 0.7;
 } 
+
+.signature {
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+
+.signature img {
+    display: block;
+    width: 120px;
+    height: 50px;
+    max-height: 100%;
+    -webkit-filter: brightness(25%);
+    filter: brightness(25%);
+}
 
