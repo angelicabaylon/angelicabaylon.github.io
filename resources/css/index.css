@@ -82,6 +82,7 @@ body{
   top: 21%;
   position: absolute;
   z-index: 0;
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
 } 
 
 #openingPic{
