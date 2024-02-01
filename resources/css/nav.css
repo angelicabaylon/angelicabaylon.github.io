@@ -69,17 +69,27 @@
 /* Media query for smaller screens */
 @media (max-width: 768px) {
     .topnav {
-        flex-direction: row;
-        padding: 0.5rem;
+        flex-direction: column;
+        padding: 0.5rem 1rem;
+        align-items: center;
     }
 
     .signature img {
-        max-width: 80px;
+        width: 150px;
+        margin-bottom: 0.5rem;
     }
 
     .topnav a {
-        padding: 10px 8px;
-        font-size: 14px;
+        width: 100%;
+        text-align: left;
+        padding: 10px;
+    }
+
+    .socialMedia {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        margin-top: 0.5rem;
     }
 }
 
@@ -87,28 +97,29 @@
 @media (max-width: 480px) {
     .topnav {
         flex-direction: column;
-        /* Stack items vertically on very small screens */
-        /* align-items: center; */
         align-items: flex-start;
     }
 
     .topnav a {
-        padding: 10px 8px;
+        padding: 10px;
         font-size: 14px;
         display: block;
         text-align: left;
         width: 100%;
+        box-sizing: border-box;
     }
 
-    /* .nav-links, */
     .socialMedia {
-        flex-direction: row;
-        flex-basis: 100%;
+        order: 3;
+        width: 100%;
         justify-content: center;
         gap: 5px;
+        flex-wrap: wrap;
+        margin-top: 0.5rem;
     }
 
     .signature {
+        order: 1;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -116,10 +127,7 @@
     }
 
     .signature img {
-        max-width: 60px;
-    }
-
-    .socialMedia {
-        margin-top: 0.5rem;
+        max-width: 100px;
+        height: auto;
     }
 }
