@@ -1,34 +1,34 @@
-/* Add a black background color to the top navigation */
+
 .topnav {
     background-color: rgb(231, 231, 231);
     overflow: hidden;
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
     border: 0.5px solid #ccc;
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    height: 55px;
 }
 
-/* Style the links inside the navigation bar */
-.topnav a {
-    position: sticky;
-    float: left;
+.topnav a {   
     color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 16px;
-    background-color: transparent
-} 
+    background-color: transparent;
+    display: inline-block;
+    line-height: 50px;
+    height: 100%;
+    box-sizing: border-box;
+}
 
-/* Change the color of links on hover */
-.topnav a:hover {
-    background-color: rgb(11, 185, 205);
-    color: black;
-} 
-
-/* Add a color to the active/current link */
+.topnav a:hover,
 .topnav a.active {
     background-color: rgb(11, 185, 205);
     color: white;
+    height: 100%;
 }
 
 .tabs {
@@ -38,25 +38,88 @@
 }
 
 .socialMedia {
-    float: right;
-    size: 10px;
-} 
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    display: flex;
+    justify-content: flex-end;
+}
 
 .fa:hover {
     opacity: 0.7;
-} 
+}
 
 .signature {
-    position: absolute;
-    top: 0;
-    left: 10px;
+    order: -1;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    filter: brightness(25%);
+    margin-right: auto;
 }
 
 .signature img {
     display: block;
+    max-width: 120px; 
+    height: auto;
+    max-height: 60px;
     width: 120px;
-    height: 50px;
-    max-height: 100%;
-    -webkit-filter: brightness(25%);
-    filter: brightness(25%);
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .topnav {
+        flex-direction: row;
+        padding: 0.5rem;
+    }
+
+    .signature img {
+        max-width: 80px;
+    }
+
+    .topnav a {
+        padding: 10px 8px;
+        font-size: 14px;
+    }
+}
+
+/* Media query for very small screens */
+@media (max-width: 480px) {
+    .topnav {
+        flex-direction: column;
+        /* Stack items vertically on very small screens */
+        /* align-items: center; */
+        align-items: flex-start;
+    }
+
+    .topnav a {
+        padding: 10px 8px;
+        font-size: 14px;
+        display: block;
+        text-align: left;
+        width: 100%;
+    }
+
+    /* .nav-links, */
+    .socialMedia {
+        flex-direction: row;
+        flex-basis: 100%;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .signature {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .signature img {
+        max-width: 60px;
+    }
+
+    .socialMedia {
+        margin-top: 0.5rem;
+    }
 }
