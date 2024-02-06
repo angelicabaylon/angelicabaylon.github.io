@@ -1,3 +1,4 @@
+
 .topnav {
     background-color: rgb(231, 231, 231);
     overflow: hidden;
@@ -69,6 +70,10 @@
     width: 120px;
 }
 
+.socialMedia * {
+    overflow: hidden;
+}
+
 /* Media query for smaller screens */
 @media (max-width: 768px) {
     .topnav {
@@ -117,6 +122,7 @@
         line-height: 15px;
         height: auto;
         flex: 1 1 50%;
+        overflow: hidden;
     }
     .tabs{
         display: flex; 
@@ -135,5 +141,8 @@
         width: 80px;
         padding: 0;
         padding-right: 15px;
+    }
+    .socialMedia {
+        margin-right: -0.1rem;
     }
 }
