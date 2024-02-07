@@ -28,8 +28,21 @@ body{
 .homePage{
   overflow: hidden;
   position: relative;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.header-container {
+  /* position: relative; */
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
 }
 #openingHeader{
   color: white;
@@ -39,12 +52,12 @@ body{
   font-family: "Lucida Console"; 
   line-height: 90%;
   font-weight: 900;
-  height: 300px;
+  height: 80%;
+  right:18%;
+  top: 28.5%;
   background-color: transparent;
   padding: 10px;
   position: absolute;
-  right: 100px;
-  top: 145px;
 }
 
 #openingHeader{
@@ -69,13 +82,12 @@ body{
   background-color: transparent;
   margin-top: 5px;
   position: absolute;
-  top: 364px;
-  width: 550px;
+  top: 73%;
+  width: 100%;
 }
 
+
 .pictureFrame{
-  width: 350px;
-  height: 480px;
   background: black;
   padding: 15px 13px ;
   right: 11%;
@@ -83,11 +95,20 @@ body{
   position: absolute;
   z-index: 0;
   box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
+
+  height: 55%;
+  width: 22%;
+  margin-bottom: 20px;
 } 
 
 #openingPic{
   height: 100%;
   width: 100%;
+}
+
+.pictureFrame img {
+  width: 100%;
+  height: auto;
 }
 
 .pictureFrame img:hover{
@@ -117,6 +138,8 @@ body{
   height: 255px;
   display: block;
   position: absolute;
+  left: calc(18% - 18px);
+  transform: translateX(-50%);
 }
 
 .name{
@@ -125,6 +148,8 @@ body{
   height: 500px;
   right: 43%;
   align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
 
 }
 
@@ -225,5 +250,298 @@ body{
   }
 }
 /***********************************************************/
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  .hangingLight {
+    height: 45%;
+    left: calc(18% - 5px);
+    transform: translateX(-50%);
+  }
 
+  #openingHeader {
+    font-size: 4em;
+    right: 50%;
+    top: 25%;
+  }
+
+  #quickQuote {
+    font-size: 1.5em;
+    top: 56%;
+    left:0;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .pictureFrame {
+    width: 160px;
+    height: auto;
+    padding: 10px;
+    right: 15%;
+    top: 10%;
+  }
+
+  .caption {
+    display: none;
+  }
+
+  .name {
+    width: 100%;
+    right: 0;
+  }
+
+  .modal-content {
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .hangingLight {
+      height: 40%;
+      position: relative;
+      left: calc(18% + 53px);
+      transform: translateX(-50%);
+    }
+  
+    #openingHeader {
+      font-size: 4em;
+      right: 0%;
+      position: relative;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+      top: -11vh;
+    }
+    #quickQuote {
+      font-size: 1.5em;
+      top: 30vh;
+      width: 100%;
+      padding: 15px 20px 15px 15px;
+      left: 2%
+    }
+    .pictureFrame {
+      width: 45%;
+      height: auto;
+      padding: 10px;
+      left: 0;
+      position: relative;
+      margin: 1rem;
+      top: 40vh;
+    }
+}
+
+
+/* Media query for even smaller screens */
+@media (max-width: 480px) {
+
+  .hangingLight {
+    height: 40%;
+    /* right: -10%; */
+    position: relative;
+    left: calc(18% + 1px);
+    transform: translateX(-50%);
+  }
+
+  #openingHeader {
+    font-size: 4em;
+    right: 0%;
+    position: relative;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    top: -13.5vh;
+  }
+
+  .header-container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #quickQuote {
+    font-size: 1.5em;
+    top: 37vh;
+    width: 100%;
+    padding: 15px 20px 15px 15px; 
+    left: 2%
+  } 
+
+  .pictureFrame {
+    width: 50%;
+    height: auto;
+    padding: 10px;
+    left: 0;
+    position: relative;
+    margin: 1rem;
+    top: 48vh;
+  }
+
+  .caption {
+    display: none;
+  }
+
+  .name {
+    width: 100%;
+    right: 0;
+  }
+
+  .modal-content {
+    width: 95%;
+    height: auto;
+  }
+}
+
+@media (max-width: 430px) {
+  .hangingLight {
+    height: 40%;
+    position: relative;
+    left: calc(18% + 4px);
+    transform: translateX(-50%);
+  }
+  #openingHeader {
+    font-size: 4em;
+    right: 0%;
+    position: relative;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    top: -11.5vh;
+  }
+
+  #quickQuote {
+    font-size: 1.5em;
+    top: 35vh;
+    width: 100%;
+    padding: 15px 20px 15px 15px;
+    left: 2%
+  }
+}
+
+@media (max-width: 425px) {
+  #openingHeader {
+    font-size: 4em;
+    right: 0%;
+    position: relative;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    top: -13.5vh;
+  }
+
+  #quickQuote {
+    font-size: 1.5em;
+    top: 38vh;
+    width: 100%;
+    padding: 15px 20px 15px 15px;
+    left: 2%
+  }
+
+  .pictureFrame {
+    width: 50%;
+    height: auto;
+    padding: 10px;
+    left: 0;
+    position: relative;
+    margin: 1rem;
+    top: 50vh;
+  }
+}
+
+@media (max-width: 390px) {
+  .hangingLight {
+    height: 40%;
+    position: relative;
+    left: calc(18% - 8px);
+    transform: translateX(-50%);
+  }
+  #openingHeader {
+    font-size: 4em;
+    right: 0%;
+    position: relative;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    top: -12.5vh;
+  }
+  #quickQuote {
+    top: 35vh;
+  }
+
+  .pictureFrame {
+    top: 48vh;
+  }
+}
+@media (max-width: 375px) {
+  #openingHeader {
+      font-size: 4em;
+      right: 0%;
+      position: relative;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+      top: -13.5vh;
+    }
+
+  #quickQuote {
+    font-size: 1.5em;
+    top: 38vh;
+    width: 100%;
+    padding: 15px 20px 15px 15px;
+    left: 2%
+  }
+  .pictureFrame {
+    width: 50%;
+    height: auto;
+    padding: 10px;
+    left: 0;
+    position: relative;
+    margin: 1rem;
+    top: 50vh;
+  }
+}
+
+@media (max-width: 360px) {
+  .hangingLight {
+    height: 40%;
+    position: relative;
+    left: calc(18% - 15px);
+    transform: translateX(-50%);
+  }
+  #openingHeader {
+    font-size: 4em;
+    right: 0%;
+    position: relative;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    top: -14vh;
+  }
+
+  #quickQuote {
+    font-size: 1.5em;
+    top: 39vh;
+    width: 100%;
+    padding: 15px 20px 15px 15px;
+    left: 2%
+  }
+  .pictureFrame {
+    width: 50%;
+    height: auto;
+    padding: 10px;
+    left: 0;
+    position: relative;
+    margin: 1rem;
+    top: 51vh;
+  }
+}
 
