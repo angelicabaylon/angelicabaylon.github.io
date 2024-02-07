@@ -8,7 +8,7 @@
   overflow-x: hidden;
 }
 
-body{
+body {
   margin: 0;
   font-family: "Lucida Console";
   font-size: 18px;
@@ -25,12 +25,10 @@ body{
 
 
 /*HOME PAGE--------------------------------------*/
-.homePage{
-  overflow: hidden;
+.homePage {
+  overflow: scroll;
   position: relative;
-  /* justify-content: space-between; */
   height: 100vh;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,28 +37,28 @@ body{
 }
 
 .header-container {
-  /* position: relative; */
   width: 90%;
   margin: 0 auto;
   text-align: center;
 }
-#openingHeader{
+
+#openingHeader {
   color: white;
-  word-wrap:normal;
+  word-wrap: normal;
   font-size: 100px;
   text-align: center;
-  font-family: "Lucida Console"; 
+  font-family: "Lucida Console";
   line-height: 90%;
   font-weight: 900;
   height: 80%;
-  right:18%;
+  right: 18%;
   top: 28.5%;
   background-color: transparent;
   padding: 10px;
   position: absolute;
 }
 
-#openingHeader{
+#openingHeader {
   -webkit-text-stroke: 1px white;
   color: black;
   text-shadow:
@@ -72,9 +70,9 @@ body{
   text-shadow: 2px 2px 8px rgb(11, 185, 205);
 }
 
-#quickQuote{
+#quickQuote {
   color: black;
-  font-size: 25px;
+  font-size: 26px;
   text-align: center;
   font-family: "Lucida Console";
   font-style: italic;
@@ -87,21 +85,21 @@ body{
 }
 
 
-.pictureFrame{
+.pictureFrame {
   background: black;
-  padding: 15px 13px ;
+  padding: 15px 13px;
   right: 11%;
   top: 21%;
   position: absolute;
   z-index: 0;
   box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
-
+  max-width: 360px;
   height: 55%;
   width: 22%;
   margin-bottom: 20px;
-} 
+}
 
-#openingPic{
+#openingPic {
   height: 100%;
   width: 100%;
 }
@@ -111,7 +109,7 @@ body{
   height: auto;
 }
 
-.pictureFrame img:hover{
+.pictureFrame img:hover {
   -webkit-transform: scale(0.993);
   transform: scale(0.993);
   opacity: 0.75;
@@ -132,7 +130,7 @@ body{
 }
 
 
-.hangingLight{
+.hangingLight {
   background-color: transparent;
   width: 155px;
   height: 255px;
@@ -142,7 +140,7 @@ body{
   transform: translateX(-50%);
 }
 
-.name{
+.name {
   position: absolute;
   width: 550px;
   height: 500px;
@@ -174,7 +172,7 @@ body{
   margin: auto;
   display: block;
   width: 80%;
-  height:90%;
+  height: 90%;
   max-width: 700px;
   margin-bottom: 100px;
   background-color: black;
@@ -249,282 +247,326 @@ body{
     width: 100%;
   }
 }
+
 /***********************************************************/
 /* Media query for smaller screens */
-@media (max-width: 768px) {
-  body {
-    font-size: 16px;
+@media (max-width: 960px) {
+  .name{
+    left: 40%;
+    transform: translateX(-50%);
+    width: 100%;
   }
+
   .hangingLight {
-    height: 45%;
-    left: calc(18% - 5px);
+    height: 40%;
+    position: absolute;
+    left: calc(36% - 2px);
     transform: translateX(-50%);
   }
 
   #openingHeader {
     font-size: 4em;
-    right: 50%;
-    top: 25%;
+    right: 0;
+    position: absolute;
+    height: auto;
+    width: 100%;
+    top: 19.5vh;
   }
 
   #quickQuote {
     font-size: 1.5em;
-    top: 56%;
-    left:0;
+    top: 50vh;
     width: 100%;
-    padding: 0 20px;
+    padding: 15px 20px 15px 15px;
+    left: 1%
   }
 
   .pictureFrame {
-    width: 160px;
+    width: 20%;
     height: auto;
     padding: 10px;
-    right: 15%;
-    top: 10%;
+    left: 85%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 5vh;
   }
 
   .caption {
     display: none;
   }
+}
 
+@media (max-width: 940px) {
   .name {
+    left: 40%;
+    transform: translateX(-50%);
     width: 100%;
-    right: 0;
   }
 
-  .modal-content {
-    width: 90%;
+  .hangingLight {
+    height: 40%;
+    position: absolute;
+    left: calc(36% - 2px);
+    transform: translateX(-50%);
+  }
+
+  #openingHeader {
+    font-size: 4em;
+    right: 0;
+    position: absolute;
     height: auto;
+    width: 100%;
+    top: 28vh;
+  }
+
+  #quickQuote {
+    font-size: 1.5em;
+    top: 68vh;
+    width: 100%;
+    padding: 15px 20px 15px 15px;
+    left: 1%
+  }
+
+  .pictureFrame {
+    width: 20%;
+    height: auto;
+    padding: 10px;
+    left: 85%;
+    transform: translateX(-50%);
+    position: absolute;
+    /* margin: 1rem auto 2rem; */
+    top: 5vh;
+  }
+
+  .caption {
+    display: none;
+  }
+}
+
+@media (max-width: 845px) {
+  .name {
+    left: 43%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+
+  .hangingLight {
+    height: 40%;
+    left: calc(36% - 19px);
+    transform: translateX(-50%);
+  }
+
+  #openingHeader {
+    font-size: 4em;
+    right: 0;
+    position: absolute;
+    height: auto;
+    width: 100%;
+    top: 30vh;
+  }
+
+  #quickQuote {
+    font-size: 1.5em;
+    top: 70vh;
+    width: calc(100% - 90px);
+    padding: 15px 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .pictureFrame {
+    width: 20%;
+    height: auto;
+    padding: 10px;
+    left: 85%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 9vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .name {
+      left: 43%;
+      transform: translateX(-50%);
+      width: 100%;
+    }
+
+  .hangingLight {
+    height: 40%;
+    left: calc(34% - 18px);
+    transform: translateX(-50%);
+  }
+
+  #openingHeader {
+    font-size: 4em;
+    right: 0;
+    position: absolute;
+    height: auto;
+    width: 100%;
+    top: 28vh;
+  }
+
+  #quickQuote {
+    font-size: 1.5em;
+    top: 68vh;
+    width: calc(100% - 90px);
+    padding: 15px 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .pictureFrame {
+    width: 20%;
+    height: auto;
+    padding: 10px;
+    left: 85%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 10vh;
+  }
+}
+
+@media (max-width: 740px) {
+  .name {
+    left: 43%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+
+  .hangingLight {
+    height: 35%;
+    left: calc(33% - 14px);
+    transform: translateX(-50%);
+  }
+
+  #openingHeader {
+    font-size: 4em;
+    right: 0;
+    position: absolute;
+    height: auto;
+    width: 100%;
+    top: 27vh;
+  }
+
+  #quickQuote {
+    font-size: 1.5em;
+    top: 69vh;
+    width: calc(100% - 90px);
+    padding: 15px 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .pictureFrame {
+    width: 20%;
+    height: auto;
+    padding: 10px;
+    left: 85%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 9vh;
   }
 }
 
 @media (max-width: 600px) {
-  .hangingLight {
-      height: 40%;
-      position: relative;
-      left: calc(18% + 53px);
-      transform: translateX(-50%);
-    }
-  
-    #openingHeader {
-      font-size: 4em;
-      right: 0%;
-      position: relative;
-      height: auto;
-      margin-left: auto;
-      margin-right: auto;
-      width: 90%;
-      top: -11vh;
-    }
-    #quickQuote {
-      font-size: 1.5em;
-      top: 30vh;
-      width: 100%;
-      padding: 15px 20px 15px 15px;
-      left: 2%
-    }
-    .pictureFrame {
-      width: 45%;
-      height: auto;
-      padding: 10px;
-      left: 0;
-      position: relative;
-      margin: 1rem;
-      top: 40vh;
-    }
-}
-
-
-/* Media query for even smaller screens */
-@media (max-width: 480px) {
+.name {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
 
   .hangingLight {
     height: 40%;
-    /* right: -10%; */
-    position: relative;
-    left: calc(18% + 1px);
+    position: absolute;
+    left: calc(30% - 18px);
     transform: translateX(-50%);
   }
 
   #openingHeader {
     font-size: 4em;
     right: 0%;
-    position: relative;
+    position: absolute;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    top: -13.5vh;
-  }
-
-  .header-container {
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
+    width: 100%;
+    top: 12.5vh;
   }
 
   #quickQuote {
     font-size: 1.5em;
-    top: 37vh;
+    top: 33vh;
     width: 100%;
-    padding: 15px 20px 15px 15px; 
-    left: 2%
-  } 
+    padding: 15px 20px 15px 15px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
   .pictureFrame {
-    width: 50%;
+    width: 45%;
     height: auto;
     padding: 10px;
-    left: 0;
-    position: relative;
-    margin: 1rem;
-    top: 48vh;
-  }
-
-  .caption {
-    display: none;
-  }
-
-  .name {
-    width: 100%;
-    right: 0;
-  }
-
-  .modal-content {
-    width: 95%;
-    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    margin: 1rem auto 2rem;
+    top: 45vh;
   }
 }
 
 @media (max-width: 430px) {
-  .hangingLight {
+.hangingLight {
     height: 40%;
-    position: relative;
-    left: calc(18% + 4px);
+    position: absolute;
+    left: calc(20% - 7px);
     transform: translateX(-50%);
   }
+
   #openingHeader {
     font-size: 4em;
     right: 0%;
-    position: relative;
+    position: absolute;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    top: -11.5vh;
+    width: 100%;
+    top: 13vh;
   }
 
   #quickQuote {
     font-size: 1.5em;
-    top: 35vh;
+    top: 36vh;
     width: 100%;
     padding: 15px 20px 15px 15px;
-    left: 2%
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .pictureFrame {
+    position: absolute;
+    width: 45%;
+    height: auto;
+    padding: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    margin: 1rem auto 2rem;
+    top: 53vh;
   }
 }
 
 @media (max-width: 425px) {
-  #openingHeader {
-    font-size: 4em;
-    right: 0%;
-    position: relative;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    top: -13.5vh;
-  }
-
-  #quickQuote {
-    font-size: 1.5em;
-    top: 38vh;
-    width: 100%;
-    padding: 15px 20px 15px 15px;
-    left: 2%
-  }
-
-  .pictureFrame {
-    width: 50%;
-    height: auto;
-    padding: 10px;
-    left: 0;
-    position: relative;
-    margin: 1rem;
-    top: 50vh;
-  }
-}
-
-@media (max-width: 390px) {
   .hangingLight {
     height: 40%;
-    position: relative;
-    left: calc(18% - 8px);
+    position: absolute;
+    left: calc(21% - 4px);
     transform: translateX(-50%);
   }
+
   #openingHeader {
     font-size: 4em;
     right: 0%;
-    position: relative;
+    position: absolute;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    top: -12.5vh;
-  }
-  #quickQuote {
-    top: 35vh;
-  }
-
-  .pictureFrame {
-    top: 48vh;
-  }
-}
-@media (max-width: 375px) {
-  #openingHeader {
-      font-size: 4em;
-      right: 0%;
-      position: relative;
-      height: auto;
-      margin-left: auto;
-      margin-right: auto;
-      width: 90%;
-      top: -13.5vh;
-    }
-
-  #quickQuote {
-    font-size: 1.5em;
-    top: 38vh;
     width: 100%;
-    padding: 15px 20px 15px 15px;
-    left: 2%
-  }
-  .pictureFrame {
-    width: 50%;
-    height: auto;
-    padding: 10px;
-    left: 0;
-    position: relative;
-    margin: 1rem;
-    top: 50vh;
-  }
-}
-
-@media (max-width: 360px) {
-  .hangingLight {
-    height: 40%;
-    position: relative;
-    left: calc(18% - 15px);
-    transform: translateX(-50%);
-  }
-  #openingHeader {
-    font-size: 4em;
-    right: 0%;
-    position: relative;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    top: -14vh;
+    top: 15.5vh;
   }
 
   #quickQuote {
@@ -532,16 +574,171 @@ body{
     top: 39vh;
     width: 100%;
     padding: 15px 20px 15px 15px;
-    left: 2%
+    left: 50%;
+    transform: translateX(-50%);
   }
+
   .pictureFrame {
-    width: 50%;
+    position: absolute;
+    width: 45%;
     height: auto;
     padding: 10px;
-    left: 0;
-    position: relative;
-    margin: 1rem;
-    top: 51vh;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    margin: 1rem auto 2rem;
+    top: 53vh;
   }
 }
 
+@media (max-width: 414px) {
+  .hangingLight {
+    height: 40%;
+    position: absolute;
+    left: calc(18% - 4px);
+    transform: translateX(-50%);
+  }
+
+  #openingHeader {
+    font-size: 4em;
+    right: 0%;
+    position: absolute;
+    height: auto;
+    width: 100%;
+    top: 13.5vh;
+  }
+
+  #quickQuote {
+    font-size: 1.5em;
+    top: 37vh;
+    width: 100%;
+    padding: 15px 20px 15px 15px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .pictureFrame {
+    position: absolute;
+    width: 45%;
+    height: auto;
+    padding: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    margin: 1rem auto 2rem;
+    top: 53vh;
+  }
+}
+
+@media (max-width: 390px) {
+  .hangingLight {
+    height: 40%;
+    position: absolute;
+    left: calc(18% - 10px);
+    transform: translateX(-50%);
+  }
+
+  #openingHeader {
+    font-size: 4em;
+    right: 0%;
+    position: absolute;
+    height: auto;
+    width: 100%;
+    top: 14vh;
+  }
+
+  #quickQuote {
+    top: 35vh;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .pictureFrame {
+    position: absolute;
+    width: 45%;
+    height: auto;
+    padding: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    margin: 1rem auto 2rem;
+    top: 52vh;
+  }
+}
+
+@media (max-width: 375px) {
+.hangingLight {
+    height: 40%;
+    position: absolute;
+    left: calc(14% - 2px);
+    transform: translateX(-50%);
+  }
+
+  #openingHeader {
+    font-size: 4em;
+    right: 0%;
+    position: absolute;
+    height: auto;
+    width: 100%;
+    top: 16vh;
+  }
+
+  #quickQuote {
+    font-size: 1.5em;
+    top: 40vh;
+    width: 100%;
+    padding: 15px 20px 15px 15px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .pictureFrame {
+    width: 45%;
+    height: auto;
+    padding: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    margin: 1rem auto 2rem;
+    top: 55vh;
+  }
+}
+
+@media (max-width: 360px) {
+
+  .hangingLight {
+    height: 30%;
+    position: absolute;
+    left: calc(18% - 5px);
+    transform: translateX(-50%);
+  }
+
+  #openingHeader {
+    font-size: 3.5em;
+    right: 0%;
+    position: absolute;
+    height: auto;
+    width: 100%;
+    top: 11vh;
+  }
+
+  #quickQuote {
+    font-size: 1.5em;
+    top: 35vh;
+    width: 100%;
+    padding: 15px 20px 15px 15px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .pictureFrame {
+    width: 45%;
+    height: auto;
+    padding: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    margin: 1rem auto 2rem;
+    top: 52vh;
+  }
+}
