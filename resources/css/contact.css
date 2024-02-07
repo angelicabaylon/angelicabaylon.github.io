@@ -20,8 +20,7 @@ body {
     -webkit-tap-highlight-color: transparent;
     background-image: url(../pics/whiteBricks.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    /* background-color: rgb(215, 211, 211); */
+    background-repeat: repeat;
 }
 /***********************************************************/
 
