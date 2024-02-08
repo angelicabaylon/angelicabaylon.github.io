@@ -434,7 +434,7 @@ h4 {
     .testimonial-text {
         line-height: 1.2;
         font-size: 12.5px;
-        height: 130px;
+        height: 150px;
         max-height: 180px;
     }
     h4 {
@@ -466,25 +466,25 @@ h4 {
         width: 90%;
     }
     .recomendations h4 {
-        left: calc(35% + 8px);
+        left: calc(33% + 8px);
         transform: translateX(-50%);
         right: 0;
     }
 
     h4 {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 }
 
 /* IE: Iphone 12 pro*/ 
 @media (max-width: 390px) {
     .recomendations h4 {
-        left: calc(33% + 8px);
+        left: calc(32% + 8px);
         transform: translateX(-50%);
         right: 0;
     }
     h4 {
-        font-size: 1.05rem;
+        font-size: 1rem;
     }
 }
 
@@ -494,8 +494,6 @@ h4 {
         left: calc(32% + 8px);
         transform: translateX(-50%);
         right: 0;
-        /* line-height: 1;
-        font-size: 1.2rem; */
     }
     h4 {
         font-size: 1rem;
