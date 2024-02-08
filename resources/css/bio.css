@@ -235,6 +235,7 @@ section{
     background-color: white;
     margin-left: 10px;
     display: flex;
+    width: 50%;
 }
 
 .btn-circle-blue img {
@@ -251,15 +252,6 @@ section{
     z-index: 10;
     margin-left: auto;
 } 
-
-/* .previous-next-selector {
-    position: absolute;
-    display: flex;
-    right: 20px;
-    top: 50%;
-    z-index: 10;
-    transform: translateY(-50%);
-} */
 
 .recomendations h4 {
     right: 43%;
@@ -403,6 +395,9 @@ h4 {
     h4 {
         font-size: 1.2rem;
     }
+    .btn-circle-blue {
+        width: 40%;
+    }
 }
 
 /* IE: Iphone 14 pro max*/
@@ -440,6 +435,9 @@ h4 {
     h4 {
         font-size: 1.2rem;
     }
+    .btn-circle-blue {
+        width: 30%;
+    }
 
 }
 
@@ -470,7 +468,6 @@ h4 {
         transform: translateX(-50%);
         right: 0;
     }
-
     h4 {
         font-size: 1rem;
     }
@@ -486,6 +483,9 @@ h4 {
     h4 {
         font-size: 1rem;
     }
+    .btn-circle-blue {
+        width: 28%;
+    }
 }
 
 /* IE: standard medium phone */
@@ -497,5 +497,8 @@ h4 {
     }
     h4 {
         font-size: 0.9rem;
+    }
+    .btn-circle-blue {
+        width: 25%;
     }
 }
