@@ -469,6 +469,9 @@ h4 {
     h4 {
         font-size: 1.1rem;
     }
+    .previous-next-selector {
+        height: 35%;
+    }
 }
 
 /* IE: Iphone XR*/
@@ -488,6 +491,9 @@ h4 {
     h4 {
         font-size: 1rem;
     }
+    .previous-next-selector {
+        height: 30%;
+    }
 }
 
 /* IE: Iphone 12 pro*/ 
@@ -500,6 +506,9 @@ h4 {
     h4 {
         font-size: 1rem;
     }
+    .previous-next-selector {
+        height: 30%;
+    }
 }
 
 /* IE: standard medium phone */
@@ -511,5 +520,8 @@ h4 {
     }
     h4 {
         font-size: 0.9rem;
+    }
+    .previous-next-selector {
+        height: 30%;
     }
 }
