@@ -522,3 +522,9 @@ h4 {
         font-size: 0.9rem;
     }
 }
+@media (max-width: 360px) {
+    .btn-circle-blue {
+        width: 20%;
+        height: 30%;
+    }
+}
