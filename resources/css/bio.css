@@ -510,12 +510,12 @@ h4 {
 
 @media (max-width: 360px) {
     .recomendations h4 {
-        left: calc(20% + 8px);
+        left: calc(30%);
         transform: translateX(-50%);
         right: 0;
     }
     .btn-circle-blue {
-        width: 25%;
+        width: 30%;
         height: 30%;
     }
 }
