@@ -544,7 +544,7 @@ h4 {
 
 @media (max-width: 360px) {
     .recomendations h4 {
-        left: calc(30%);
+        left: calc(10%);
         transform: translateX(-50%);
         right: 0;
     }
