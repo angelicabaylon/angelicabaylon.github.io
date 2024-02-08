@@ -452,7 +452,7 @@ h4 {
     }
     .previous-next-selector {
         margin-left: 2px;
-        height: 40%;
+        height: 30%;
         width: auto;
     }
 
@@ -492,7 +492,7 @@ h4 {
         font-size: 1rem;
     }
     .previous-next-selector {
-        height: 30%;
+        height: 25%;
     }
 }
 
@@ -507,7 +507,7 @@ h4 {
         font-size: 1rem;
     }
     .previous-next-selector {
-        height: 30%;
+        height: 25%;
     }
 }
 
@@ -522,6 +522,6 @@ h4 {
         font-size: 0.9rem;
     }
     .previous-next-selector {
-        height: 30%;
+        height: 25%;
     }
 }
