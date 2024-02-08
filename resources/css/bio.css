@@ -502,9 +502,12 @@ h4 {
     h4 {
         font-size: 0.9rem;
     }
-    .btn-circle-blue {
+    /* .btn-circle-blue {
         width: 25%;
         height: 40%;
+    } */
+    .previous-next-selector {
+        height: 50%;
     }
 }
 
@@ -514,8 +517,12 @@ h4 {
         transform: translateX(-50%);
         right: 0;
     }
-    .btn-circle-blue {
+
+    /* .btn-circle-blue {
         width: 35%;
         height: 35%;
+    } */
+    .previous-next-selector {
+        height: 50%;
     }
 }
