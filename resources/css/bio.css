@@ -419,6 +419,14 @@ h4 {
     .section-title-container {
         padding: 29px;
     }
+    .recomendations h4 {
+        left: 40%;
+        transform: translateX(-50%);
+        right: 0;
+    }
+    .previous-next-selector {
+        padding-right: 10px;
+    }
 }
 
 /* IE: Iphone 14 pro max*/
