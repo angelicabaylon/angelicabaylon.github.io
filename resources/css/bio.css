@@ -502,7 +502,12 @@ h4 {
     h4 {
         font-size: 0.9rem;
     }
+    .btn-circle-blue {
+        width: 20%;
+        height: 30%;
+    }
 }
+
 @media (max-width: 360px) {
     .btn-circle-blue {
         width: 20%;
