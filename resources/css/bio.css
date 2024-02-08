@@ -210,25 +210,6 @@ section{
     max-width: fit-content;
 }
 
-/* .recomendation-title-container {
-    justify-content: space-between;
-    border-bottom: 3px solid black;
-    align-items: center;
-    display: flex;
-    padding: 10px;
-    background-color: white;
-    position: absolute;
-}
-
-.recomendation-title {
-    text-transform: uppercase;
-    background-color: transparent;
-    font-size: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-} */
-
 /* BUTTON STYLES */
 
 .btn-circle-blue {
@@ -401,7 +382,7 @@ h4 {
 }
 
 /* IE: Nexus 7 */
-@media (max-width: 600px) {
+@media (max-width: 667px) {
     .background {
         width: 85%;
     }
