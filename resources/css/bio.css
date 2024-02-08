@@ -78,20 +78,21 @@ section{
 .section-title-container {
     border-bottom: 3px solid black;
     display: flex;
-    padding: 20px;
+    padding: 35px;
     background-color: white;
     align-items: center;
     justify-content: center;
     width: 100%;
+    position: relative;
 }
 
 .section-title {
     text-transform: uppercase;
     background-color: transparent;
-    margin: auto; 
+    position: absolute;
     width: 100%;
     text-align: center;
-    position: absolute;
+    margin: 0 auto;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -216,12 +217,16 @@ section{
     display: flex;
     padding: 10px;
     background-color: white;
+    position: absolute;
 }
 
 .recomendation-title {
     text-transform: uppercase;
     background-color: transparent;
     font-size: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
 }
 
 /* BUTTON STYLES */
@@ -234,8 +239,10 @@ section{
     background: #fff;
     background-color: white;
     margin-left: 10px;
+    overflow: hidden;
     display: flex;
-    width: 50%;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .btn-circle-blue img {
@@ -249,14 +256,19 @@ section{
 .previous-next-selector {
     background-color: white;
     display: flex;
+    justify-content: flex-end;
     z-index: 10;
     margin-left: auto;
+    width: auto;
+    position: absolute;
+    right: 0;
+    height: 45%;
+    padding-right: 20px;
 } 
 
 .recomendations h4 {
     right: 43%;
     position: absolute;
-    /* font-size: auto; */
 }
 
 h4 {
@@ -370,6 +382,9 @@ h4 {
     .recomendations {
         width: 80%;
     }
+    .section-title-container {
+        padding: 30px;
+    }
 }
 
 /* IE: samsung galaxy s8+ flipped */
@@ -395,8 +410,8 @@ h4 {
     h4 {
         font-size: 1.2rem;
     }
-    .btn-circle-blue {
-        width: 40%;
+    .section-title-container {
+        padding: 29px;
     }
 }
 
@@ -428,15 +443,17 @@ h4 {
     }
     .testimonial-text {
         line-height: 1.2;
-        font-size: 12px;
+        font-size: 11.5px;
         height: 160px;
         max-height: 180px;
     }
     h4 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
-    .btn-circle-blue {
-        width: 30%;
+    .previous-next-selector {
+        margin-left: 2px;
+        height: 40%;
+        width: auto;
     }
 
 }
@@ -464,7 +481,7 @@ h4 {
         width: 90%;
     }
     .recomendations h4 {
-        left: calc(33% + 8px);
+        left: calc(34% + 8px);
         transform: translateX(-50%);
         right: 0;
     }
@@ -483,9 +500,6 @@ h4 {
     h4 {
         font-size: 1rem;
     }
-    .btn-circle-blue {
-        width: 28%;
-    }
 }
 
 /* IE: standard medium phone */
@@ -497,8 +511,5 @@ h4 {
     }
     h4 {
         font-size: 0.9rem;
-    }
-    .btn-circle-blue {
-        width: 25%;
     }
 }
