@@ -243,6 +243,8 @@ section{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    width: 95%;
+    height: 95%;
 }
 
 .btn-circle-blue img {
@@ -262,7 +264,7 @@ section{
     width: auto;
     position: absolute;
     right: 0;
-    height: 45%;
+    /* height: 45%; */
     padding-right: 20px;
 } 
 
@@ -443,33 +445,33 @@ h4 {
     }
     .testimonial-text {
         line-height: 1.2;
-        font-size: 11.5px;
+        font-size: 11px;
         height: 160px;
         max-height: 180px;
     }
     h4 {
         font-size: 1.1rem;
     }
-    .previous-next-selector {
-        margin-left: 2px;
-        height: 30%;
-        width: auto;
+    .btn-circle-blue {
+        width: 35%;
+        height: 35%;
     }
 
 }
 
 /* IE: Standard large phone*/
 @media (max-width: 425px) {
-    .background {
-        width: 90%;
+    /* .background {
+        width: 95%;
     }
     .recomendations {
-        width: 90%;
-    }
+        width: 95%;
+    } */
     h4 {
         font-size: 1.1rem;
     }
-    .previous-next-selector {
+    .btn-circle-blue {
+        width: 35%;
         height: 35%;
     }
 }
@@ -491,9 +493,6 @@ h4 {
     h4 {
         font-size: 1rem;
     }
-    .previous-next-selector {
-        height: 25%;
-    }
 }
 
 /* IE: Iphone 12 pro*/ 
@@ -506,8 +505,9 @@ h4 {
     h4 {
         font-size: 1rem;
     }
-    .previous-next-selector {
-        height: 25%;
+    .btn-circle-blue {
+        width: 30%;
+        height: 30%;
     }
 }
 
@@ -520,8 +520,5 @@ h4 {
     }
     h4 {
         font-size: 0.9rem;
-    }
-    .previous-next-selector {
-        height: 25%;
     }
 }
