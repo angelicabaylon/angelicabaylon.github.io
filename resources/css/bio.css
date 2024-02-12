@@ -460,6 +460,7 @@ h4 {
         font-size: 11px;
         height: 160px;
         max-height: 180px;
+        padding: 4px 5px 10px 5px;
     }
     h4 {
         font-size: 1.1rem;
