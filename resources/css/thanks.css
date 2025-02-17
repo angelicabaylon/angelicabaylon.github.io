@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    font-family: "Lucida Console";
+    box-sizing: border-box;
+    margin: 0;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    font-family: "Lucida Console";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: black;
+    text-align: start;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    background-image: url(../pics/whiteBricks.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    margin: 0;
+    text-align: center;
+    font-size: 4rem;
+}
