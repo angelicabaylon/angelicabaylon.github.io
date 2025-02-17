@@ -137,6 +137,13 @@ section{
     height: 35px;
 }
 
+.education-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
 .position-entity {
     margin-left: 25px;
     padding: 10px;
@@ -151,6 +158,10 @@ section{
     padding: 10px;
     justify-content: space-between;
     display: inline-flex;
+}
+
+.field {
+    font-size: 16px;
 }
 
 .position-timeline,
