@@ -237,7 +237,8 @@ section{
 .btn-circle-blue {
     opacity: 1;
     align-content: center;
-    border: 1.5px solid rgb(36, 201, 219);
+    border: 1.5px solid rgb(40, 208, 227);
+    /* border: 1.5px solid rgb(36, 201, 219); */
     border-radius: 25%;
     background: #fff;
     background-color: white;
@@ -252,6 +253,9 @@ section{
 
 .btn-circle-blue img {
     background-color: white;
+    width: 35px;
+    height: 25px;
+    padding: 4px;
 }
 
 .btn-circle-blue:hover {
