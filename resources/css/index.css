@@ -109,11 +109,11 @@ body {
   height: auto;
 }
 
-.pictureFrame img:hover {
+/* .pictureFrame img:hover {
   -webkit-transform: scale(0.993);
   transform: scale(0.993);
   opacity: 0.75;
-}
+} */
 
 .pictureFrame:hover .caption {
   color: white;

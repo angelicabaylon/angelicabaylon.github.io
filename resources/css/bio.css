@@ -341,12 +341,15 @@ h4 {
     align-items: center;
     padding-bottom: 1px;
 }
-.profile p{
+
+.profile p {
     font-weight: bold;
 }
-.profile a:hover{
+
+.profile a:hover {
     background-color: lightblue;
 }
+
 .account-photo {
     background-color: transparent;
     display: flex;
@@ -361,15 +364,29 @@ h4 {
     background-color: transparent;
 }
 
-.profile-name,
-.profile-name span {
+.profile-name {
     font-weight: 400;
     font-size: 14px;
-    color: grey;
     background-color: transparent;
     text-align: center;
     align-items: center;
     padding-top: 13px;
+}
+
+.profile-name .location {
+    font-weight: 400;
+    font-size: 14px;
+    background-color: transparent;
+    text-align: center;
+    align-items: center;
+    padding-top: 8px;
+}
+
+.profile-name .role {
+    font-size: 12px;
+    font-style: italic;
+    padding-top: 5px;
+    color: grey;
 }
 
 /********************************************************
